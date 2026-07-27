@@ -58,6 +58,150 @@
       "notas": "Fondo de venture capital (seed). El hero tiene un degradado radial cálido (durazno a violeta) como un destello detrás del título, sobre fondo negro. El resto del scroll es una sucesión de afirmaciones cortas centradas con mucho espacio en blanco vertical, atravesadas por una línea fina central, como un manifiesto que se va leyendo a medida que se scrollea. Contrasta fuerte con el resto de la página (oscura) el bloque final de blog posts con fondo claro y grano/halftone en las miniaturas. Sirve como referencia para proyectos que necesiten transmitir seriedad y solidez sin caer en el corporativismo plano — fondos, estudios legales, consultoras con ambición de marca.",
       "fecha": "2026-07-27",
       "revisar": false
+    },
+    {
+      "id": "agencia-karmina",
+      "titulo": "Agencia Karmina",
+      "imagen": "assets/capturas/agencia-karmina.png",
+      "estilos": ["Editorial serif oscuro"],
+      "sensaciones": ["Sofisticación", "Autenticidad", "Calidez controlada"],
+      "tags": [
+        "tipografía serif display bold",
+        "secciones claras y oscuras alternadas",
+        "fotografía de producto saturada en amarillo mostaza",
+        "chips de servicios rotados dispersos como collage",
+        "grid de portfolio en mosaico"
+      ],
+      "link": "https://agenciakarmina.com/",
+      "notas": "Agencia de marketing digital y social media (Barcelona/Madrid/Buenos Aires). Alterna secciones negras con blancas, con fotografía de producto muy saturada (amarillo mostaza) como acento cálido sobre el negro. Los servicios se muestran como pastillas de texto rotadas y superpuestas, como un collage. Sirve como referencia para agencias creativas que quieran verse sofisticadas sin perder calidez. Link inferido del nombre de archivo, conviene confirmarlo.",
+      "fecha": "2026-07-27",
+      "revisar": false
+    },
+    {
+      "id": "block-green",
+      "titulo": "Block Green",
+      "imagen": "assets/capturas/block-green.png",
+      "estilos": ["Corporate futurista monocromo"],
+      "sensaciones": ["Solidez técnica", "Frialdad calculada", "Autoridad"],
+      "tags": [
+        "tipografía sans display gigante geométrica",
+        "collage de texturas monocromas (roca, turbinas eólicas)",
+        "secciones numeradas 01/02/03",
+        "degradados metálicos entre secciones",
+        "acento verde menta puntual"
+      ],
+      "link": "https://block.green/",
+      "notas": "Plataforma de capital para mineros de Bitcoin y data centers HPC. Fondo gris claro casi blanco con tipografía negra enorme tipo grotesca, combinada con imágenes texturizadas en blanco y negro (rocas, turbinas) que le dan un toque casi geológico/orgánico al tono financiero-técnico. Las secciones se separan con degradados metálicos verticales. Sirve como referencia para fintech o infraestructura que necesite transmitir seriedad técnica sin caer en lo corporativo genérico.",
+      "fecha": "2026-07-27",
+      "revisar": false
+    },
+    {
+      "id": "capcut-para-idiotas",
+      "titulo": "CapCut para Idiotas",
+      "imagen": "assets/capturas/capcut-para-idiotas.png",
+      "estilos": ["Landing de infoproducto maximalista"],
+      "sensaciones": ["Energía", "Cercanía", "Aspiracional"],
+      "tags": [
+        "gradiente 3D tipo blob en el hero",
+        "mezcla de tipografías (script + redondeada + manuscrita)",
+        "CTAs en pastel neón",
+        "mockups de resultados/capturas como prueba social",
+        "ilustraciones tipo sticker"
+      ],
+      "link": "",
+      "notas": "Landing de un curso de edición de video en CapCut (marca 'Ego Design'). Hero con una forma 3D tipo blob en degradado violeta-rosa-naranja sobre fondo celeste, mezcla varias tipografías (script azul, manuscrita a mano, redondeada bold) sin miedo a la sobrecarga visual. Usa capturas reales de resultados (vistas de videos) como prueba social, estilo 'mirá lo que logré'. Sirve como referencia para landings de cursos/infoproductos dirigidos a un público joven y creativo. No se pudo inferir el dominio real desde el nombre de archivo (menciona estar hecho con Tiendup), falta confirmar el link.",
+      "fecha": "2026-07-27",
+      "revisar": false
+    },
+    {
+      "id": "decime-ego",
+      "titulo": "decime.ego",
+      "imagen": "assets/capturas/decime-ego.png",
+      "estilos": ["Marca personal serif-azul"],
+      "sensaciones": ["Autoridad cercana", "Aspiracional", "Dinamismo"],
+      "tags": [
+        "tipografía serif display oversized para el logo/wordmark",
+        "marquee de texto en loop",
+        "bloques de color plano azul eléctrico para stats",
+        "grid de video thumbnails tipo reels",
+        "fila de logos de marcas como prueba social"
+      ],
+      "link": "https://decime-ego-lp.lovable.app/",
+      "notas": "Sitio principal de la misma marca personal que 'CapCut para Idiotas' (creadora de contenido/educadora), pero con un lenguaje visual más contenido: wordmark serif enorme en cursiva, un bloque azul eléctrico plano para destacar la cifra de alumnos, y grid de reels como muestra de trabajo. Es la versión 'seria' de la marca frente a la landing de curso más maximalista. Parece un preview alojado en Lovable, conviene confirmar si hay dominio propio definitivo.",
+      "fecha": "2026-07-27",
+      "revisar": false
+    },
+    {
+      "id": "hurry-up-and-have-fun",
+      "titulo": "Hurry Up & Have Fun",
+      "imagen": "assets/capturas/hurry-up-and-have-fun.png",
+      "estilos": ["Maximalismo color-block retro"],
+      "sensaciones": ["Alegría", "Desenfado", "Calidez lúdica"],
+      "tags": [
+        "tipografía condensada tipo slab gigante",
+        "bloques de color plano saturado (rosa, azul, oliva, violeta)",
+        "patrón de tablero de ajedrez como divisor",
+        "foto circular con badges de color en las esquinas",
+        "etiquetas monoespaciadas pequeñas"
+      ],
+      "link": "https://hurryupandhavefun.com/",
+      "notas": "Dúo de party planners en NYC. Todo en bloques de color plano muy saturado sin degradados ni sombras, tipografía condensada enorme en marrón oscuro sobre crema, foto de las fundadoras recortada en círculo con etiquetas de color en las esquinas tipo pin. Sirve como referencia para marcas que quieran sentirse divertidas y cálidas sin volverse infantiles — bueno para eventos, gastronomía o servicios con personalidad.",
+      "fecha": "2026-07-27",
+      "revisar": false
+    },
+    {
+      "id": "jamm",
+      "titulo": "Jamm",
+      "imagen": "assets/capturas/jamm.png",
+      "estilos": ["SaaS lúdico con mascotas"],
+      "sensaciones": ["Simpatía", "Confianza desenfadada", "Dulzura"],
+      "tags": [
+        "mascotas ilustradas tipo caramelo/helado",
+        "iconografía redondeada a mano",
+        "mockups de UI en collage",
+        "tarjetas de pricing en violeta y rosa",
+        "tabla comparativa 'nosotros vs la competencia'"
+      ],
+      "link": "https://jamm.co/",
+      "notas": "Servicio de diseño por suscripción con estética de golosina/heladería: mascotas tipo cono de helado y fantasma-galleta, paleta pastel con acentos violeta fuerte, iconos redondeados dibujados a mano para explicar beneficios. Sirve como referencia para SaaS o servicios B2B que quieran bajar la formalidad y sonar más simpáticos y humanos.",
+      "fecha": "2026-07-27",
+      "revisar": false
+    },
+    {
+      "id": "orionix",
+      "titulo": "Orionix",
+      "imagen": "assets/capturas/orionix.png",
+      "estilos": ["Agencia minimal cream"],
+      "sensaciones": ["Sofisticación", "Modernidad", "Calma premium"],
+      "tags": [
+        "formas 3D holográficas/iridiscentes",
+        "tarjetas de proyecto oscuras y redondeadas con foto cinematográfica",
+        "fondo crema con mucho whitespace",
+        "wordmark gigante gris claro de cierre",
+        "cards de pricing en 3 niveles"
+      ],
+      "link": "https://orionix.framer.website/",
+      "notas": "Sitio de agencia creativa hecho en Framer, plantilla muy representativa del estilo 'agencia minimal 2024-2025': fondo crema, formas holográficas tipo burbuja de jabón como acento decorativo, y tarjetas de proyecto oscuras con fotografía cinematográfica moody. Sirve como referencia de portfolio de agencia sobrio pero no aburrido. Dominio inferido del nombre de archivo (parece un subdominio de Framer), conviene confirmar si hay dominio propio.",
+      "fecha": "2026-07-27",
+      "revisar": false
+    },
+    {
+      "id": "alphane-labs",
+      "titulo": "Alphane Labs",
+      "imagen": "assets/capturas/alphane-labs.png",
+      "estilos": ["Técnico-científico minimalista"],
+      "sensaciones": ["Precisión", "Confianza técnica", "Frialdad clínica"],
+      "tags": [
+        "ilustraciones isométricas de línea técnica",
+        "animación de rotación de producto (se nota en la captura por los frames repetidos)",
+        "tipografía monoespaciada para labels",
+        "fondo celeste muy claro",
+        "gráficos de datos técnicos"
+      ],
+      "link": "https://alphanelabs.com/",
+      "notas": "Empresa B2B de instrumentación científica (caracterización de materiales). Fondo celeste casi blanco con diagramas isométricos de línea de instrumentos de laboratorio repetidos varias veces de forma casi idéntica a lo largo del scroll — probablemente porque en el sitio real hay una animación de rotación 3D del instrumento que se activa con el scroll, y la captura completa terminó congelando varios frames de esa animación. Sirve como referencia para B2B técnico/científico que necesite transmitir precisión sin ser aburrido. Link es al dominio principal, no a la sub-sección específica capturada.",
+      "fecha": "2026-07-27",
+      "revisar": false
     }
   ]
 }
