@@ -1,3 +1,44 @@
 {
-  "entradas": []
+  "entradas": [
+    {
+      "id": "muse-studio",
+      "titulo": "Muse Studio",
+      "imagen": "assets/capturas/muse-studio.png",
+      "estilos": ["Editorial pastel artesanal"],
+      "sensaciones": ["Calidez", "Confianza artesanal", "Ternura"],
+      "tags": [
+        "tipografía script cursiva",
+        "dividers ondulados entre secciones",
+        "paleta pastel multicolor sobre crema",
+        "tarjetas inclinadas tipo collage",
+        "tipografía serif editorial grande",
+        "marquee de logos de clientes",
+        "cards de precios en bloques de color"
+      ],
+      "link": "https://musestudio.uk/",
+      "notas": "Estudio de branding. Fondo crema cálido con bloques de color pastel (verde salvia, celeste, rosa, lavanda, verde bosque) para separar secciones con curvas onduladas. Mezcla tipografía serif editorial grande con script cursiva a mano para acentos ('thoughtful'). Sirve como referencia para portfolios de estudios creativos, marcas artesanales o de bienestar que busquen un tono cálido y hecho a mano en vez de corporativo.",
+      "fecha": "2026-07-27",
+      "revisar": false
+    },
+    {
+      "id": "seen-advertising",
+      "titulo": "Seen Advertising Agency",
+      "imagen": "assets/capturas/seen-advertising.png",
+      "estilos": ["Maximalismo pop publicitario"],
+      "sensaciones": ["Energía", "Humor", "Frescura"],
+      "tags": [
+        "tipografía display bold tipo burbuja",
+        "mascota ilustrada cartoon",
+        "servicios mockeados como packaging de producto (etiqueta, código de barras)",
+        "marquee de texto en loop",
+        "reseñas de clientes en abanico tipo cartas",
+        "footer con forma de ticket perforado",
+        "paleta verde-crema alto contraste"
+      ],
+      "link": "https://seenadvertising.agency/",
+      "notas": "Agencia de publicidad. Usa la metáfora de 'servicios como productos de supermercado': cada servicio se presenta como un paquete con etiqueta, ingredientes y código de barras. Tono lúdico y directo, tipografía enorme y redondeada. Sirve como referencia para marcas con personalidad desenfadada, D2C, o cualquier proyecto que quiera romper el tono corporativo típico de agencias.",
+      "fecha": "2026-07-27",
+      "revisar": false
+    }
+  ]
 }
