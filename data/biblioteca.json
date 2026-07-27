@@ -39,6 +39,25 @@
       "notas": "Agencia de publicidad. Usa la metáfora de 'servicios como productos de supermercado': cada servicio se presenta como un paquete con etiqueta, ingredientes y código de barras. Tono lúdico y directo, tipografía enorme y redondeada. Sirve como referencia para marcas con personalidad desenfadada, D2C, o cualquier proyecto que quiera romper el tono corporativo típico de agencias.",
       "fecha": "2026-07-27",
       "revisar": false
+    },
+    {
+      "id": "side-stage-ventures",
+      "titulo": "Side Stage Ventures",
+      "imagen": "assets/capturas/side-stage-ventures.png",
+      "estilos": ["Manifiesto mono oscuro"],
+      "sensaciones": ["Seriedad", "Confianza fundacional", "Sobriedad"],
+      "tags": [
+        "tipografía monoespaciada en todo (hasta el logo)",
+        "fondo oscuro con degradado radial cálido tipo destello",
+        "layout tipo manifiesto: bloques de texto cortos muy espaciados",
+        "línea vertical central como guía de lectura",
+        "fotografía de equipo en blanco y negro granulado",
+        "tarjetas de blog con textura halftone sobre fondo claro"
+      ],
+      "link": "https://sidestage.vc/",
+      "notas": "Fondo de venture capital (seed). El hero tiene un degradado radial cálido (durazno a violeta) como un destello detrás del título, sobre fondo negro. El resto del scroll es una sucesión de afirmaciones cortas centradas con mucho espacio en blanco vertical, atravesadas por una línea fina central, como un manifiesto que se va leyendo a medida que se scrollea. Contrasta fuerte con el resto de la página (oscura) el bloque final de blog posts con fondo claro y grano/halftone en las miniaturas. Sirve como referencia para proyectos que necesiten transmitir seriedad y solidez sin caer en el corporativismo plano — fondos, estudios legales, consultoras con ambición de marca.",
+      "fecha": "2026-07-27",
+      "revisar": false
     }
   ]
 }
