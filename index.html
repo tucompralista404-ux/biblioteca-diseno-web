@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca Diseño Web</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__title">
+    <span class="site-header__mark">◈</span>
+    <h1>Biblioteca Diseño Web</h1>
+  </div>
+  <p class="site-header__subtitle">Referencias de diseño clasificadas por estilo y sensación</p>
+</header>
+
+<nav class="chips" id="chips" aria-label="Filtros por estilo"></nav>
+
+<main>
+  <div class="grid" id="grid"></div>
+  <p class="empty-state" id="empty-state" hidden>
+    Todavía no hay referencias cargadas. Subí capturas a <code>inbox/</code> y esperá al procesamiento diario, o pedile a Claude que las procese ahora.
+  </p>
+</main>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" id="modal-backdrop"></div>
+  <div class="modal__panel" role="dialog" aria-modal="true">
+    <button class="modal__close" id="modal-close" aria-label="Cerrar">✕</button>
+    <img class="modal__image" id="modal-image" alt="">
+    <div class="modal__body">
+      <h2 id="modal-title"></h2>
+      <p class="modal__descriptor" id="modal-descriptor"></p>
+      <div class="modal__tags" id="modal-tags"></div>
+      <p class="modal__notas" id="modal-notas"></p>
+      <a class="modal__link" id="modal-link" target="_blank" rel="noopener"></a>
+      <div class="modal__actions">
+        <button class="btn btn--primary" id="copy-brief">COPIAR BRIEF</button>
+        <span class="modal__copied" id="copy-feedback" hidden>Copiado ✓</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
