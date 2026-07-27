@@ -1,10 +1,12 @@
 (function () {
   var state = {
     entradas: [],
-    filtro: 'ALL'
+    filtroEstilo: 'ALL',
+    filtroFamilia: 'ALL'
   };
 
   var chipsEl = document.getElementById('chips');
+  var chipsFamiliaEl = document.getElementById('chips-familia');
   var gridEl = document.getElementById('grid');
   var emptyStateEl = document.getElementById('empty-state');
 
@@ -12,6 +14,7 @@
     .then(function (res) { return res.json(); })
     .then(function (data) {
       state.entradas = data.entradas || [];
+      renderChipsFamilia();
       renderChips();
       renderGrid();
     })
@@ -25,35 +28,65 @@
     return (entrada.estilos && entrada.estilos[0]) || 'Sin estilo';
   }
 
-  function contarPorEstilo() {
+  function familiaDe(entrada) {
+    return entrada.familia || 'Sin familia';
+  }
+
+  function entradasVisiblesPorFamilia() {
+    // Para contar estilos, respeta el filtro de familia activo pero no el de estilo.
+    return state.entradas.filter(function (e) {
+      return state.filtroFamilia === 'ALL' || familiaDe(e) === state.filtroFamilia;
+    });
+  }
+
+  function contarPor(lista, fn) {
     var counts = {};
-    state.entradas.forEach(function (e) {
-      var estilo = primerEstilo(e);
-      counts[estilo] = (counts[estilo] || 0) + 1;
+    lista.forEach(function (e) {
+      var clave = fn(e);
+      counts[clave] = (counts[clave] || 0) + 1;
     });
     return counts;
   }
 
-  function renderChips() {
-    var counts = contarPorEstilo();
-    var estilos = Object.keys(counts).sort();
+  function renderChipsFamilia() {
+    var counts = contarPor(state.entradas, familiaDe);
+    var familias = Object.keys(counts).sort();
 
-    chipsEl.innerHTML = '';
-    chipsEl.appendChild(crearChip('ALL', 'Todas', state.entradas.length));
-    estilos.forEach(function (estilo) {
-      chipsEl.appendChild(crearChip(estilo, estilo, counts[estilo]));
+    chipsFamiliaEl.innerHTML = '';
+    chipsFamiliaEl.appendChild(crearChip('ALL', 'Todas las familias', state.entradas.length, 'familia'));
+    familias.forEach(function (familia) {
+      chipsFamiliaEl.appendChild(crearChip(familia, familia, counts[familia], 'familia'));
     });
   }
 
-  function crearChip(valor, etiqueta, count) {
+  function renderChips() {
+    var visibles = entradasVisiblesPorFamilia();
+    var counts = contarPor(visibles, primerEstilo);
+    var estilos = Object.keys(counts).sort();
+
+    chipsEl.innerHTML = '';
+    chipsEl.appendChild(crearChip('ALL', 'Todas', visibles.length, 'estilo'));
+    estilos.forEach(function (estilo) {
+      chipsEl.appendChild(crearChip(estilo, estilo, counts[estilo], 'estilo'));
+    });
+  }
+
+  function crearChip(valor, etiqueta, count, tipo) {
     var btn = document.createElement('button');
     btn.className = 'chip';
     btn.type = 'button';
     btn.textContent = etiqueta + ' ' + count;
-    btn.setAttribute('aria-pressed', String(state.filtro === valor));
+    var activo = tipo === 'familia' ? state.filtroFamilia === valor : state.filtroEstilo === valor;
+    btn.setAttribute('aria-pressed', String(activo));
     btn.addEventListener('click', function () {
-      state.filtro = valor;
-      renderChips();
+      if (tipo === 'familia') {
+        state.filtroFamilia = valor;
+        state.filtroEstilo = 'ALL'; // cambiar de familia resetea el sub-filtro de estilo
+        renderChips();
+      } else {
+        state.filtroEstilo = valor;
+      }
+      renderChipsFamilia();
       renderGrid();
     });
     return btn;
@@ -61,7 +94,9 @@
 
   function renderGrid() {
     var lista = state.entradas.filter(function (e) {
-      return state.filtro === 'ALL' || primerEstilo(e) === state.filtro;
+      var pasaFamilia = state.filtroFamilia === 'ALL' || familiaDe(e) === state.filtroFamilia;
+      var pasaEstilo = state.filtroEstilo === 'ALL' || primerEstilo(e) === state.filtroEstilo;
+      return pasaFamilia && pasaEstilo;
     });
 
     gridEl.innerHTML = '';
@@ -116,7 +151,7 @@
     var footer = document.createElement('div');
     footer.className = 'card__footer';
     var estiloSpan = document.createElement('span');
-    estiloSpan.textContent = '◆ ' + primerEstilo(entrada);
+    estiloSpan.textContent = '◆ ' + primerEstilo(entrada) + ' · ' + familiaDe(entrada);
     var indexSpan = document.createElement('span');
     if (entrada.revisar) {
       indexSpan.className = 'card__revisar';
@@ -157,7 +192,8 @@
     modalImage.src = entrada.imagen;
     modalImage.alt = entrada.titulo || '';
     modalTitle.textContent = entrada.titulo || 'Sin título';
-    modalDescriptor.textContent = 'Estilo: ' + (entrada.estilos || []).join(', ') +
+    modalDescriptor.textContent = 'Familia: ' + familiaDe(entrada) +
+      '  ·  Estilo: ' + (entrada.estilos || []).join(', ') +
       '  ·  Sensaciones: ' + (entrada.sensaciones || []).join(', ');
 
     modalTags.innerHTML = '';
@@ -195,7 +231,8 @@
 
   copyBriefBtn.addEventListener('click', function () {
     if (!entradaActual) return;
-    var brief = 'Estilo: ' + (entradaActual.estilos || []).join(', ') + '. ' +
+    var brief = 'Familia: ' + familiaDe(entradaActual) + '. ' +
+      'Estilo: ' + (entradaActual.estilos || []).join(', ') + '. ' +
       'Sensaciones: ' + (entradaActual.sensaciones || []).join(', ') + '. ' +
       'Elementos destacados: ' + (entradaActual.tags || []).join(', ') + '.' +
       (entradaActual.notas ? ' Notas: ' + entradaActual.notas + '.' : '') +

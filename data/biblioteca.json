@@ -4,6 +4,7 @@
       "id": "muse-studio",
       "titulo": "Muse Studio",
       "imagen": "assets/capturas/muse-studio.png",
+      "familia": "Cálido artesanal",
       "estilos": ["Editorial pastel artesanal"],
       "sensaciones": ["Calidez", "Confianza artesanal", "Ternura"],
       "tags": [
@@ -24,6 +25,7 @@
       "id": "seen-advertising",
       "titulo": "Seen Advertising Agency",
       "imagen": "assets/capturas/seen-advertising.png",
+      "familia": "Enérgico pop",
       "estilos": ["Maximalismo pop publicitario"],
       "sensaciones": ["Energía", "Humor", "Frescura"],
       "tags": [
@@ -44,6 +46,7 @@
       "id": "side-stage-ventures",
       "titulo": "Side Stage Ventures",
       "imagen": "assets/capturas/side-stage-ventures.png",
+      "familia": "Serio técnico",
       "estilos": ["Manifiesto mono oscuro"],
       "sensaciones": ["Seriedad", "Confianza fundacional", "Sobriedad"],
       "tags": [
@@ -63,6 +66,7 @@
       "id": "agencia-karmina",
       "titulo": "Agencia Karmina",
       "imagen": "assets/capturas/agencia-karmina.png",
+      "familia": "Sofisticado minimal",
       "estilos": ["Editorial serif oscuro"],
       "sensaciones": ["Sofisticación", "Autenticidad", "Calidez controlada"],
       "tags": [
@@ -81,6 +85,7 @@
       "id": "block-green",
       "titulo": "Block Green",
       "imagen": "assets/capturas/block-green.png",
+      "familia": "Serio técnico",
       "estilos": ["Corporate futurista monocromo"],
       "sensaciones": ["Solidez técnica", "Frialdad calculada", "Autoridad"],
       "tags": [
@@ -99,6 +104,7 @@
       "id": "capcut-para-idiotas",
       "titulo": "CapCut para Idiotas",
       "imagen": "assets/capturas/capcut-para-idiotas.png",
+      "familia": "Enérgico pop",
       "estilos": ["Landing de infoproducto maximalista"],
       "sensaciones": ["Energía", "Cercanía", "Aspiracional"],
       "tags": [
@@ -117,6 +123,7 @@
       "id": "decime-ego",
       "titulo": "decime.ego",
       "imagen": "assets/capturas/decime-ego.png",
+      "familia": "Enérgico pop",
       "estilos": ["Marca personal serif-azul"],
       "sensaciones": ["Autoridad cercana", "Aspiracional", "Dinamismo"],
       "tags": [
@@ -135,6 +142,7 @@
       "id": "hurry-up-and-have-fun",
       "titulo": "Hurry Up & Have Fun",
       "imagen": "assets/capturas/hurry-up-and-have-fun.png",
+      "familia": "Cálido artesanal",
       "estilos": ["Maximalismo color-block retro"],
       "sensaciones": ["Alegría", "Desenfado", "Calidez lúdica"],
       "tags": [
@@ -153,6 +161,7 @@
       "id": "jamm",
       "titulo": "Jamm",
       "imagen": "assets/capturas/jamm.png",
+      "familia": "Cálido artesanal",
       "estilos": ["SaaS lúdico con mascotas"],
       "sensaciones": ["Simpatía", "Confianza desenfadada", "Dulzura"],
       "tags": [
@@ -171,6 +180,7 @@
       "id": "orionix",
       "titulo": "Orionix",
       "imagen": "assets/capturas/orionix.png",
+      "familia": "Sofisticado minimal",
       "estilos": ["Agencia minimal cream"],
       "sensaciones": ["Sofisticación", "Modernidad", "Calma premium"],
       "tags": [
@@ -189,6 +199,7 @@
       "id": "alphane-labs",
       "titulo": "Alphane Labs",
       "imagen": "assets/capturas/alphane-labs.png",
+      "familia": "Serio técnico",
       "estilos": ["Técnico-científico minimalista"],
       "sensaciones": ["Precisión", "Confianza técnica", "Frialdad clínica"],
       "tags": [

@@ -15,6 +15,7 @@ No está relacionada con ningún proyecto puntual — es transversal, se usa com
   "id": "slug-unico-kebab-case",
   "titulo": "Nombre corto y descriptivo",
   "imagen": "assets/capturas/slug-unico-kebab-case.png",
+  "familia": "Familia/macro-categoría (ver más abajo)",
   "estilos": ["Estilo principal", "Estilo secundario (si aplica)"],
   "sensaciones": ["Sensación 1", "Sensación 2"],
   "tags": ["elemento destacado 1", "elemento destacado 2"],
@@ -25,7 +26,16 @@ No está relacionada con ningún proyecto puntual — es transversal, se usa com
 }
 ```
 
-- `index.html`, `css/styles.css`, `js/app.js` — el tablero: lee `data/biblioteca.json` y lo muestra como galería filtrable por estilo, sin build ni dependencias.
+`familia` es un nivel de agrupación más amplio que `estilos` — mientras `estilos` describe el look específico de una referencia (ej. "Editorial pastel artesanal"), `familia` agrupa varios estilos que comparten el mismo tono/sensación general. Sirve para que el tablero pueda filtrar por "qué onda busco" además de "qué estilo puntual". Familias existentes hasta ahora (reusar si encaja, crear una nueva solo si genuinamente ninguna encaja):
+
+- **Cálido artesanal** — calidez, cercanía, hecho a mano, no corporativo.
+- **Enérgico pop** — alta energía, saturado, aspiracional, sin miedo a la sobrecarga visual.
+- **Serio técnico** — autoridad, precisión, paleta restringida, poco o nada de juego.
+- **Sofisticado minimal** — elegancia, mucho whitespace, premium sin frialdad.
+
+Igual que con `estilos`, esta lista **no es cerrada**: nace y crece orgánicamente. Antes de reusar una familia existente, confirmar que la sensación de la nueva referencia realmente encaja — no forzarla adentro de una familia solo porque ya existe.
+
+- `index.html`, `css/styles.css`, `js/app.js` — el tablero: lee `data/biblioteca.json` y lo muestra como galería filtrable por estilo y por familia, sin build ni dependencias.
 
 ## Proceso de clasificación (correr una vez al día, o cuando el dueño lo pida)
 
@@ -41,8 +51,8 @@ No está relacionada con ningún proyecto puntual — es transversal, se usa com
    - Mirar la(s) imagen(es) directamente (no hace falta ni se puede navegar el link — el entorno puede tener la red restringida).
    - Si hay `.txt`, leer el link y la descripción de animación/interacción que haya, e incorporarla a `notas`.
    - Analizar: paleta de colores, tipografía, layout/composición, y cualquier otro elemento visual notable.
-   - Clasificar `estilos` (una etiqueta de estilo de diseño general, ej. "Editorial cálido", "Brutalista", "Minimalismo suizo", "Maximalismo tipográfico" — las que ya existan en `biblioteca.json` o una nueva si no encaja en ninguna) y `sensaciones` (la impresión/emoción que evoca, ej. "Calma", "Urgencia", "Lujo", "Nostalgia", "Juego").
-   - **No inventar una taxonomía fija de antemano**: las categorías de estilo y sensación nacen orgánicamente. Antes de crear una nueva, revisar las que ya existen en `biblioteca.json` y reusarlas si encajan razonablemente — evitar duplicar variantes casi idénticas (ej. no crear "Editorial Cálido" y "Editorial cálida" como si fueran distintas).
+   - Clasificar `estilos` (una etiqueta de estilo de diseño general, ej. "Editorial cálido", "Brutalista", "Minimalismo suizo", "Maximalismo tipográfico" — las que ya existan en `biblioteca.json` o una nueva si no encaja en ninguna), `sensaciones` (la impresión/emoción que evoca, ej. "Calma", "Urgencia", "Lujo", "Nostalgia", "Juego") y `familia` (la macro-categoría de tono — ver la lista de familias más arriba en este archivo).
+   - **No inventar una taxonomía fija de antemano**: las categorías de estilo, familia y sensación nacen orgánicamente. Antes de crear una nueva, revisar las que ya existen en `biblioteca.json` y reusarlas si encajan razonablemente — evitar duplicar variantes casi idénticas (ej. no crear "Editorial Cálido" y "Editorial cálida" como si fueran distintas).
    - `tags`: lista libre y abierta de lo que específicamente llamó la atención (tipografía, color, animación, layout, textura, micro-interacción, lo que sea) — no limitarse a una lista fija.
    - Si la clasificación es genuinamente ambigua o dudosa, cargar la entrada igual con la mejor clasificación posible pero marcar `"revisar": true` y explicarlo en `notas`, en vez de forzar una respuesta con falsa confianza.
 6. Mover la imagen (o la primera si son varias) de `inbox/` a `assets/capturas/` con un nombre de archivo en kebab-case que coincida con el `id`. Si eran varias capturas secuenciales, mover solo la más representativa como `imagen` principal (las demás se pueden borrar de `inbox/` una vez incorporada su información a `notas`, no hace falta guardarlas todas).

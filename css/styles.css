@@ -55,7 +55,23 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 16px clamp(20px, 4vw, 48px) 24px;
+  padding: 8px clamp(20px, 4vw, 48px);
+}
+
+.chips--familia {
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+.chips--familia .chip {
+  border-color: var(--acento);
+  color: var(--acento);
+}
+
+.chips--familia .chip[aria-pressed="true"] {
+  background: var(--acento);
+  color: #fff;
+  border-color: var(--acento);
 }
 
 .chip {
